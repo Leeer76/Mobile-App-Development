@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Mobile Application</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.js"></script>
+	
+	<link rel="stylesheet" href="jquery.ui.datepicker.mobile.css" /> 
+	<script src="jQuery.ui.datepicker.js"></script>
+	<script src="jquery.ui.datepicker.mobile.js"></script>
+	
+	<meta charset="utf-8">
+  </head>
+  <body>
+	<section id="page1" data-role="page">
+	  <header data-role="header"><h1>CIS 240 Mobile Apps</h1></header>
+	  <div class="content" data-role="content">
+		<h3>Driver Information</h3>
+		<form id="myform" action="somefile.php" method="post">
+	      <div>
+		  
+		    <p>
+				<label for="fname">First Name</label>
+				<input type="text" id="name">
+			</p>
+		    <p>
+				<label for="lname">Last Name</label>
+				<input type="text" id="name">
+			</p>
+			
+	      </div>
+		  <input type="submit" value="Submit" data-inline="true">
+		</form>
+	  </div>
+	  <footer data-role="footer" data-position="fixed"><h1>Lake Area Tech</h1></footer>
+	</section>
+  </body>
+</html>
