@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Popup Assignment</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>	
+	<meta charset="utf-8">
+  </head>
+  <body>
+	<div id="page1" data-role="page">
+		<header data-role="header" data-theme="b"><h1>Tax Form</h1></header> 
+		<div class="content" data-role="content" data-theme="b">
+			<h3>1043 E</h3>
+				<form action="#" method="POST">
+					<label for="nameF">First Name: <a href="#popUp1" data-rel="popup">First Name?</a></label>
+					<input type="text" id="nameF">
+					<label for="namel">Last Name: <a href="#popUp2" data-rel="popup">Last Name?</a></label>
+					<input type="text" id="namel">
+					<label for="dob">Date of Birth: <a href="#popUp3" data-rel="popup" class="ui-btn ui-icon-calendar ui-btn-inline ui-btn-icon-notext"></a></label>
+					<input type="date" id="dob">
+					<label for="marriage">Marital Status: <a href="#popUp4" data-rel="popup" class="ui-btn ui-icon-user ui-btn-inline ui-btn-icon-notext"></a></label>
+					<p>
+					<select id="marriage" data-role="slider">
+						<option value="1">Single</option>
+						<option value="2">Married</option>
+					</select>
+					</p>
+					<label for="income">Yearly Income: <a href="#popUp5" data-rel="popup" class="ui-btn ui-icon-info ui-btn-inline ui-btn-icon-notext"></a></label>
+					<input type="text" id="income">
+					<label for="email">Email: <a href="#popUp6" data-rel="popup" class="ui-btn ui-icon-mail ui-btn-inline ui-btn-icon-notext"></a></label>
+					<input type="email" id="email">
+					<input type="submit" value="Submit" data-inline="true">
+				</form>
+				
+		</div>	
+		<div data-role="popup" id="popUp1">
+			<p>This would be the first part of your name given at birth.</p>
+		</div>
+		<div data-role="popup" id="popUp2">
+			<p>This is your sir name such as Smith or Johnson.</p>
+		</div>
+		<div data-role="popup" id="popUp3">
+			<p>This is the date and year on which you were born.</p>
+		</div>
+		<div data-role="popup" id="popUp4">
+			<p>slide to weather you have another human burdening you with finacial woe or not.</p>
+		</div>
+		<div data-role="popup" id="popUp5">
+			<p>Enter the amount of cheddar you made this year.</p>
+		</div>
+		<div data-role="popup" id="popUp6">
+			<p>Come on you don't know what email is... just go ask your grandchildren.</p>
+		</div>
+		<footer data-role="footer" data-position="fixed" data-theme="b"><h1>Lake Area Tech</h1></footer>
+	</div>
+  </body>
+</html>

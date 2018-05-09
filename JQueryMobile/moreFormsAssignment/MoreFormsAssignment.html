@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Mobile Application</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.js"></script>
+	
+	<link rel="stylesheet" href="jquery.ui.datepicker.mobile.css" /> 
+	<script src="jQuery.ui.datepicker.js"></script>
+	<script src="jquery.ui.datepicker.mobile.js"></script>
+	
+	<meta charset="utf-8">
+  </head>
+  <body>
+	<section id="page1" data-role="page" data-theme="a">
+	  <header data-role="header"><h1>CIS 240 Mobile Apps</h1></header>
+	  <div class="content" data-role="content">
+		<h3>Movie Data Collection</h3>
+		<form id="myform" action="somefile.php" method="post">
+	      <div>
+		  
+		    <p>
+				<label for="fname">First Name</label>
+				<input type="text" id="fname">
+			</p>
+		    <p>
+				<label for="lname">Last Name</label>
+				<input type="text" id="lname">
+			</p>
+			<p>
+				<label for="idNum">ID Number</label>
+				<input type="text" id="idNum">
+			</p>
+			<p>
+				<label for="cal">First viewing of Goonies</label>
+				<input id="cal" data-role="date" type="date" value="" />
+			</p>
+		    <p>
+				<label for="rating">Goonies rating</label>
+				<input id="rating" type="range" min="0" max="10" value="0" onchange="ratingMsg()">
+			</p>
+			<p id="msg"></p>
+			<p>
+				<fieldset data-role="controlgroup">
+					<legend>Goonies Opinion</legend>
+					<input name="response1" id="response1" type="checkbox">
+					<label for="response1">Absolute garbage</label>
+					<input name="response2" id="response2" type="checkbox">
+					<label for="response2">Worst movie ever</label>
+					<input name="response3" id="response3" type="checkbox">
+					<label for="response3">An abomination of cinema</label>
+				</fieldset>
+			</p>
+	      </div>
+		  <input type="submit" value="Submit" data-inline="true" onclick="submitMsg()">
+		</form>
+	  </div>
+	  <footer data-role="footer" data-position="fixed"><h1>Lake Area Tech</h1></footer>
+	</section>
+  </body>
+  <script>
+	var $ = function(id){
+		return document.getElementById(id);
+	
+	};
+	
+	function ratingMsg(){
+		var rat = $("rating").value;
+		var txt;
+		if(rat >= 3){
+			txt = "Nope, no one can think that highly of this movie";
+		}else{
+			txt="";
+		}
+		$("msg").innerHTML = txt;
+		$("msg").style.color = 'red';
+		$("msg").style.textalign = 'center';
+	};
+	
+	function submitMsg(){
+		alert("Thanks you for your input. You will now be on a government watch list.");
+	};  
+  </script>
+</html>

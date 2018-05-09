@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Mobile Application</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.js"></script>
+  </head>
+  <body>
+	<section id="page1" data-role="page">
+	  <header data-role="header"><h1>CIS 240 Mobile Apps</h1></header>
+	  <div class="content" data-role="content">
+		<label for="language">Favorite Language</label>
+		<select id="language">
+				<option value="0">Choose...</option>
+				<option value="1">HTML</option>
+				<option value="2">JAVA</option>
+				<option value="3">Visual Basic</option>
+				<option value="4">PHP</option>
+				<option value="5">Cobal</option>
+				<option value="6">SQL</option>
+		</select>
+		<label for="language2">Favorite Language</label>
+		<select id="language2" data-native-menu=false data-theme="a">
+					<option value="0" data-placeholder=true>Choose...</option>
+				<optgroup label="Web"/>
+					<option value="1">HTML5</option>
+					<option value="4">PHP</option>
+				<optgroup label="Desktop" />
+					<option value="2">JAVA</option>
+					<option value="3">Visual Basic</option>				
+					<option value="5">Cobal</option>
+				<optgroup label="Database" />	
+					<option value="6">SQL</option>
+		</select>
+			
+	  </div>
+	  <footer data-role="footer" data-position="fixed"><h1>Lake Area Tech</h1></footer>
+	</section>
+  </body>
+</html>

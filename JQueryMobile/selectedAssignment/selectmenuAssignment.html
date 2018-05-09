@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Mobile Application</title>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.js"></script>
+  </head>
+  <body>
+	<section id="page1" data-role="page">
+	  <header data-role="header"><h1>CIS 240 Mobile Apps</h1></header>
+	  <div class="content" data-role="content">
+		<label for="language">Enjoyable Things</label>
+		<select id="language" data-native-menu=false data-theme="a" multiple>
+				<option value="0" data-placeholder=true>Choose...</option>
+			<optgroup label="Books"/>
+				<option value="1">To Kill a Mockingbird</option>
+				<option value="2">Lorder of the Flies</option>
+				<option value="3">Animal Farm</option>
+			<optgroup label="Music"/>
+				<option value="4">Skylar Grey</option>
+				<option value="5">A Perfect Circle</option>
+				<option value="6">Gorillaz</option>
+			<optgroup label="Hobbies"/>
+				<option value="4">Painting</option>
+				<option value="5">DYI Projects</option>
+				<option value="6">Model Building</option>
+		</select>
+		<label for="language2">Favorite Media</label>
+		<select id="language2" data-native-menu=false data-theme="a" multiple>
+					<option value="0" data-placeholder=true>Choose...</option>
+				<optgroup label="Television Channel"/>
+					<option value="1">Food Network</option>
+					<option value="4">Destination America</option>
+					<option value="2">Hallmark Mysteries</option>
+				<optgroup label="Production Company" />
+					<option value="2">Bad Robot Productions</option>
+					<option value="3">Gary Sanchez Productions</option>				
+					<option value="5">Legendary Entertainment</option>
+				<optgroup label="Youtube Channel" />	
+					<option value="6">Just Between US</option>
+					<option value="3">Dev Tips</option>				
+					<option value="5">Alan Thrall</option>
+		</select>
+			
+	  </div>
+	  <footer data-role="footer" data-position="fixed"><h1>Lake Area Tech</h1></footer>
+	</section>
+  </body>
+</html>
